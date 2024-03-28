@@ -1,0 +1,17 @@
+#container
+
+from snakemake.utils import min_version
+min_version("6.5")
+
+configfile: "workflow/config.yaml"
+
+#report: "report/workflow.rst"
+
+
+include: "rules/busco.smk"
+
+rule run_all:
+     input:
+          rules.run_busco.output
+#     output:
+#          touch()

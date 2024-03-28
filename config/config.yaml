@@ -1,0 +1,9 @@
+################################
+#### Config for Metagenomics
+################################
+
+# Name of project
+project_name: 'MAGs'
+
+# Path to sample manifest
+samples: 'config/samples.tsv'
