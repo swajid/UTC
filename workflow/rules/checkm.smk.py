@@ -1,6 +1,6 @@
 rule all:
     input:
-        "checkm/output/qa_summary.tsv"
+        "checkm/output/list.tsv"
 
 rule run_checkm_lineage_wf:
     input:
